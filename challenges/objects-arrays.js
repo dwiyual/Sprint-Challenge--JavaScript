@@ -5,30 +5,43 @@
   Use this pattern to create your objects: 
   object name, diet, weight, length, period
 */
+class Dinosaur {
+  constructor(attr){
+  this.name = attr.name;
+  this.deit = attr.deit;
+  this.weight = attr.weight;
+  this.length = attr.length;
+  this.period = attr.period;
+  }
+  roar(){
+    return "RAWERSRARARWERSARARARRRR!";
+  }
+};
+
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
-
+const tyrannosaurus = new Dinosaur( tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous); 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
-
+const stegosaurus = new Dinosaurn(stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic);
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
-
+const velociraptor = new Dinosaur(velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous);
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log(tyrannosaurus.weight);
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(velociraptor.deit);
 
 // How long was a stegosaurus?
-console.log();
+console.log(stegosaurus.length);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log(tyrannosaurus.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+console.log(tyrannosaurus.roar());
 
 
 // ==== Arrays ====
@@ -52,6 +65,7 @@ const graduates = [
 
 Once you have the new array created, log the result. */
 const universities = [];
+universities.push(graduates.map((graduate)=>{return graduate.university;})
 console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
@@ -60,11 +74,11 @@ The resulting contact information strings should have a space between the first 
 "Josh josh@example.com"
 
 Log the result of your new array. */
-const contactInfo = [];
+const contactInfo = ;
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-const unisWithUni = [];
+const unisWithUni = graduates.map((graduate) => {} );
 console.log(unisWithUni);
 
 
